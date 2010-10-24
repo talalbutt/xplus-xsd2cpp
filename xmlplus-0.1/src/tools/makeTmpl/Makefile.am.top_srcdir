@@ -8,12 +8,10 @@ ACLOCAL_AMFLAGS = -I m4
 AUTOMAKE_OPTIONS = foreign
 SUBDIRS = src include
 
-AM_CXXFLAGS= -I/Users/satyat/xplusbuild/include -I$(top_srcdir)/include
+AM_CXXFLAGS= -I/Users/satyat/xplusbuildRO/include -I$(top_srcdir)/include
 
 bin_PROGRAMS=@xsdname@run
 @xsdname@run_SOURCES=main.cpp
 
-#@xsdname@run_LDADD = $(top_srcdir)/src/lib@xsdname@.la /Users/satyat/xplusbuild/lib/libdom.la /Users/satyat/xplusbuild/lib/libxsd.la /Users/satyat/xplusbuild/lib/libxplus.la /Users/satyat/xplusbuild/lib/libminiPocoFound.la
-
-@xsdname@run_LDADD = $(top_srcdir)/src/lib@xsdname@.la /Users/satyat/xplusbuild/lib/libxsdall.la 
+@xsdname@run_LDADD = $(top_srcdir)/src/lib@xsdname@.la /Users/satyat/xplusbuildRO/lib/libxsdall.la 
 @xsdname@run_LDFLAGS = -lexpat
