@@ -1,14 +1,14 @@
-AM_CXXFLAGS= -g -O0 -I$(top_srcdir)/include 
-AM_CFLAGS= -g -O0 -I$(top_srcdir)/include -I$(top_srcdir)/src/DOM/
+AM_CXXFLAGS= -S -g -O0 -I$(top_srcdir)/include 
+AM_CFLAGS= -S -g -O0 -I$(top_srcdir)/include -I$(top_srcdir)/src/DOM/
 AUTOMAKE_OPTIONS = subdir-objects
 AM_LDFLAGS=
 
 SUBDIRS = Poco XPlus DOM XSD tools
 
 
-bin_PROGRAMS=fsmTest 
-fsmTest_SOURCES=XSD/FsmTest.cpp 
-fsmTest_LDADD =libxsdall.la
+#bin_PROGRAMS=fsmTest 
+#fsmTest_SOURCES=XSD/FsmTest.cpp 
+#fsmTest_LDADD =libxsdall.la
 
 
 lib_LTLIBRARIES = libxsdall.la
@@ -81,5 +81,5 @@ libxsdall_la_SOURCES = \
   XSD/XSDFSM.cpp \
   XSD/xsdUtils.cpp
 
-libxsdall_la_LDFLAGS = -fvisibility=default -lpthread
+libxsdall_la_LDFLAGS = -lexpat -lpthread
 

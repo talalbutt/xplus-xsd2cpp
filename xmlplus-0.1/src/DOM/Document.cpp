@@ -20,6 +20,7 @@
 #include <iostream>
 
 #include "DOM/DOMAllInc.h"
+#include <assert.h>
 
 using namespace std;
 
