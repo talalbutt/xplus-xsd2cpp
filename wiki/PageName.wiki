@@ -17,7 +17,7 @@ An application using xsd2cpp generated C++ classes(XML-Objects), has to interact
 The xsd2cpp tool is a C++ code generator. The xsd2cpp tool when invoked on an input XML Schema, generates C++ classes(headers) mapped to the input XML Schema components. Alongside, wherever needed, it generates implementation files(.cpp) for the generated C++ classes. Also, a sample application(main.cpp) is generated to show how an application could consume the generated C++ source files.
 
 
-== Why choose XmPlus ==
+== Why choose `XmlPlus` ==
 Here are a few reasons for using `XmlPlus`:
  * `XmlPlus` is open-source and free.
  * It provides a code generator viz. xsd2cpp. The xsd2cpp tool generates C++ Data Binding code(XML-Objects) for the supplied schema.
