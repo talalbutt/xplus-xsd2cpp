@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+The xsd2cpp tool is a C++ code generator. The xsd2cpp tool when invoked on an input XML Schema, generates C++ classes(headers) mapped to the input XML Schema components. Alongside, wherever needed, it generates implementation files(.cpp) for the generated C++ classes. Also, a sample application(main.cpp) is generated to show how an application could consume the generated C++ source files.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+
+= Details2 =
