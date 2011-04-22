@@ -2,14 +2,22 @@
 
 = Introduction =
 
+XmlPlus is a C++ XML Data Binding Tool. XmlPlus provides following utilities:
+
+* X/O mapping:
+The XML data binding tool automatically generates structures( eg. classes in OO languages) mapped for XML-Schema components. The in-memory objects holding xml data are also known as XML-Objects. The applications interact with xml data directly through in-memory objects, rather than using DOM/SAX APIs.
+
+* Parsing ie. Deserialization/Unmarshalling:
+  Parser to read valid XML documents into in-memory XML-Objects
+
+* Marshalling/Serialization:
+Writer to write the XML-Objects to xml files
+
+
+In essence, the application has to interact only with readymade in-memory object-interface. These objects hide(and save) all the complexities of XML I/O from(for) the application. Thus, one is saved from writing XML I/O implementations(ie. Classes to hold xml data, alongwith Serialization/Deserialization code) for xml data.
+
+
 The xsd2cpp tool is a C++ code generator. The xsd2cpp tool when invoked on an input XML Schema, generates C++ classes(headers) mapped to the input XML Schema components. Alongside, wherever needed, it generates implementation files(.cpp) for the generated C++ classes. Also, a sample application(main.cpp) is generated to show how an application could consume the generated C++ source files.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
 
 
 = Details2 =
