@@ -1,10 +1,10 @@
-# XmlPlus Documentation
+# `XmlPlus` Documentation
 
 == Introduction ==
 
-XmlPlus is a C++ XML Data Binding Tool.
-XmlPlus provides following utilities:
- * X/O mapping:  XmlPlus xsd2cpp automatically generates C++ classes mapped to XML-Schema components. The in-memory objects holding xml data are also known as XML-Objects. The applications interact with xml data directly through in-memory objects, rather than using DOM/SAX APIs.
+`XmlPlus` is a C++ XML Data Binding Tool.
+`XmlPlus` provides following utilities:
+ * X/O mapping:  `XmlPlus xsd2cpp` automatically generates C++ classes mapped to XML-Schema components. The in-memory objects holding xml data are also known as XML-Objects. The applications interact with xml data directly through in-memory objects, rather than using DOM/SAX APIs.
  * Parsing ie. Deserialization/Unmarshalling
  * Parser to read valid XML documents into in-memory XML-Objects
  * Marshalling/Serialization: Writer to write the XML-Objects to xml files
